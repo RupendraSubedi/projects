@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saugat Cleaning Services</title>
+      <!-- page stylesheet -->
+      <link rel="stylesheet" type="text/css" href="../css/additionalcss.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+      <link rel="icon" href="../images/logohead.png">
+      
+      <!-- fonts from google -->
+      
+
+      
+      <!-- Scroll to top  button function -->
+      
+      
+      <!-- scroll to top button function end -->
+
+  </head>
+    
+  <body>
+      <div class="w3-container top w3-row-padding">
+          <div class="w3-col">
+        <a class="w3-logo notranslate" href="images/saugat.png"><img src="../images/saugat.png" width="50%"></a>
+          <div class="w3-panel w3-rest w3-right" id="tagline">
+              Quality You Can Trust..
+            </div>
+              </div>
+      </div>
+
+          <div class="w3-row w3-green">
+            <div class="w3-col s3">
+              <a href="../index.html" class="w3-button w3-block">HOME</a>
+            </div>
+            <div class="w3-col s3 w3-dropdown-hover">
+              <a href="../index.html#services" class="w3-button w3-block">SERVICES</a>
+                <div class="w3-bar w3-dropdown-content w3-card w3-green">
+                    <a class="w3-bar-item " href="housecleaning.html">Carpet &amp; Residential Cleaning</a>
+                    <a class="w3-bar-item" href="officecleaning.html">Office &amp; Commercial Cleaning</a>
+                    <a class="w3-bar-item" href="windowcleaning.html">Window Cleaning &amp; Power Wash</a>
+                    <a class="w3-bar-item" href="postconstructioncleaning.html">Move-In Move-Out Cleaning</a>
+                </div>
+            </div>
+            <div class="w3-col s3">
+              <a href="../index.html#about" class="w3-button w3-block">ABOUT</a>
+            </div>
+            <div class="w3-col s3">
+              <a href="../index.html#where" class="w3-button w3-block">CONTACT</a>
+            </div>
+          </div>
+              <h3 class="w3-center w3-padding-48 w3-white"><span class="w3-wide"> Service Request</span></h3>
+    <div class="w3-container w3-padding w3-light-grey">
+        <div class="w3-content">
+            <div class="w3-rest">
+           <form class="service-request-form" action="servicerequest.php" method="post" width="100%">
+               
+                      <label for="first_name">&#42;First Name:</label><br>
+                      <input type="text" id="fname" placeholder="First Name" name="first_name" required class="w3-input"><br>
+               
+                        <label for="last_name">&#42;Last Name:</label><br>
+                        <input type="text" id="lname" placeholder="Last Name"  name="last_name" required class="w3-input"><br>
+                        <label name="telephone" >&#42;Phone:</label><br>
+                        <input type="text" id="phone" placeholder="xxx-xxx-xxxx" required class="w3-input"><br>
+                      <label for="email"> &#42;Email:</label><br>
+                      <input type="text" id="email" placeholder="someone@example.com" name="email" required class="w3-input"><br>
+                      <label for="address1">&#42;Address 1:</label><br>
+                      <input type="text" id="address1" name="address1" placeholder="House number and street name" required class="w3-input"><br>
+               
+                        <label for="address2">&#42;Address 2:</label><br>
+               <input type="text" id="address2" name="address2" placeholder="Apt/Suit" class="w3-input"><br>
+               <label name="servicearea" required >&#42;Select Service Area:</label>
+               <select class="w3-input" required>
+                    <option></option>
+                   <option>Maple Ridge</option>
+                   <option>Pitt Meadows</option>
+                   <option>Langley</option>
+                   <option>Surrey</option>
+                   <option>Burnaby</option>
+                   <option>New Westminster</option>
+                   <option>Port Coquitlam</option>
+                   <option>Coquitlam</option>
+                   <option>Port Moody</option>
+                   <option>Vancouver </option>
+               </select><br>
+              <label name="servicetype" required >&#42;Select Service Type:</label>
+               <select class="w3-input" required>
+                    <option></option>
+                   <option>Carpet &amp; Residential Cleaning</option>
+                   <option>Office &amp; Commercial Cleaning</option>
+<!--                   <option>Office Cleaning</option>-->
+                   <option> Window Cleaning &amp; Power Wash</option>
+<!--                   <option>Carpet Cleaning</option>-->
+                   <option>Post-Construction Cleaning</option>
+<!--                   <option></option>-->
+               </select><br>
+               
+               
+                      <button name="submit" id="submit" class="btn w3-button w3-block btn-success m-4 w3-green w3-margin-bottom" width="50%"> Submit</button>
+                      <button name="cancle" id="reset" type="reset" onclick="alert(your input has been cleared.)" class="btn btn-danger w3-button w3-block w3-red w3-margin-top">Reset</button>
+                    </form>
+                <p> &#42; <i>service types and service rates may vary. It can be discussed over the phone. </i></p>
+        <p>Like to know our rates? <a class="text-center p-4" href="serviceinvoice.html" style="color: mediumpurple;">VIEW OUR SERVICE RATES</a></p>
+            
+        </div>
+<!--
+       <div class="col-sm-6 p-2">
+           <img src="../images/service_request.png"  style="box-shadow: 10px 10px grey; width: 100%; height: auto;">
+        </div>
+-->
+      </div>
+      </div>
+        <div class="w3-container w3-center">
+              <img class="w3-image w3-center" src="../images/licensed_bonded.png" width="10%" style="padding-left: 1rem;">
+              <img class="w3-image w3-center" src="../images/eco_friendly.png" width="10%" style="padding-left: 1rem;">
+              <img class="w3-image w3-center" src="../images/24_7.png" width="10%" style="padding-left: 1rem;">
+              <img class="w3-image w3-center" src="../images/100_percent.png" width="10%" style="padding-left: 1rem;">  
+          <div class="w3-content">
+              <p><a class="w3-button w3-light-blue w3-ripple w3-round w3-hover-green" href="servicerequest.html" style="width: 45%;">Request Service</a></p>
+          </div>
+      </div>
+
+      <footer class="w3-container bottom w3-green">
+        
+          <div class="w3-panel">
+              <p class="w3-content w3-center">&copy; 2021 Saugat Cleaning Services &#149; All Rights Reserved.</p></div>
+      </footer>
+  </body>
+</html>
