@@ -1,0 +1,77 @@
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+.w3-tag {
+    color: greenyellow;
+}
+
+#home {
+    height: 80%;
+}
+
+
+
+@media screen and (min-width: 1366.01px) {
+    #tagline {
+        font-size: 3.2vw;
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #tagline {
+        font-size: 3.5vw;
+        padding-top: 32px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:1024px) {
+    #tagline {
+        font-size: 3vw;
+        padding-top: 24px;
+        padding-right: 10px;
+        padding-left: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 812px) {
+    #tagline {
+        font-size: 3vw;
+        padding-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+}
+/*mobile view*/
+@media screen and (max-width: 460px) {
+    #tagline {
+        font-size: 85%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
