@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	template_carousel.htm
+	Copyright (c) 2017 by FirstName MiddleName LastName
+	All Rights Reserved
+	
+	A website assignment using Bootstrap 3.3.7
+	for course WEB125, HTML & CSS, at
+	HACC - Central Pennsylvania's Community College
+	Professor Carl R. Petersheim, M.S.
+-->
+
+<head>
+  <title>Carousel Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+	
+	<!-- Style Sheets -->
+	<link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+	<div class="container-fluid"> <!-- Corresponds to <main> tag in HTML5 -->
+	
+		<div class="row"> <!-- row 1, 1x12 cols wide, like <header> in HTML5 --> 
+			<div class="col-sm-12">
+				<h1>Row 1 - Header</h1>
+				<p>Header Content</p>
+			</div>
+		</div> <!-- end row 1 -->
+	
+		<nav class="navbar navbar-default">
+			<div class="container-fluid"> <!-- nested -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Site Title</a>
+				</div> <!-- end navbar-header" -->
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+					<li><a href="#">Page 4</a></li>
+					<li><a href="#">Page 5</a></li>
+				</ul>
+			</div> <!-- end nested container-fluid -->
+		</nav>
+			
+		<div class="row"> <!-- row 2, 12 cols wide, like HMTL5 section -->
+			<div class="col-sm-12"> <!-- single column, like HTML5 article -->
+ 		
+			<!-------------------Carousel begins ---------------------------->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				  <li data-target="#myCarousel" data-slide-to="1"></li>
+				  <li data-target="#myCarousel" data-slide-to="2"></li>
+				  <li data-target="#myCarousel" data-slide-to="3"></li>
+				  <li data-target="#myCarousel" data-slide-to="4"></li>
+				  <li data-target="#myCarousel" data-slide-to="5"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+
+				  <div class="item active">
+					<img src="../images/chura.jpg" alt="Pic 1 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>Pic 1 Caption</h3>
+					  <p>Pic 1 Description</p>
+					</div>
+				  </div>
+
+				  <div class="item">
+					<img src="../images/clothes.jpg" alt="Pic 2 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>Pic 2 Caption</h3>
+					  <p>Pic 2 Description</p>
+					</div>
+				  </div>
+				
+				  <div class="item">
+					<img src="../images/fruits.jpg" alt="Pic 3 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>Pic 3 Caption</h3>
+					  <p>Pic 3 Description</p>
+					</div>
+				  </div>
+				  
+				  <div class="item">
+					<img src="../images/meat_rosted.jpg" alt="Pic 4 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>Pic 4 Caption</h3>
+					  <p>Pic 4 Description</p>
+					</div>
+				  </div>
+
+				  <div class="item">
+					<img src="../images/clothing.jpg" alt="Pic 5 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>Pic 5 Caption</h3>
+					  <p>Pic 5 Description</p>
+					</div>
+				  </div>
+
+				  <div class="item">
+					<img src="../images/sabji.jpg" alt="Pic 6 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>Pic 6 Caption</h3>
+					  <p>Pic 6 Description</p>
+					</div>
+				  </div>				  
+			  
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			  </div>
+			<!-------------------Carousel ends ----------------------------> 
+	
+			</div> <!-- end single column -->
+		</div> <!-- end row 2 -->
+				
+		<div class="row"> <!-- row 3, 1x12 cols wide, like header in HTML5 --> 
+			<div class="col-sm-12">
+				<h3>Row 3 - Footer</h3>
+				<p>Footer Content</p>
+			</div>
+		</div> <!-- end row 3 -->
+		
+	</div> <!-- end container-fluid -->
+	
+
+</body>
+
+</html>

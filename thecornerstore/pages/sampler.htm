@@ -1,0 +1,174 @@
+<html>
+<!-- 	WEB125 Sampler Page - Spring 2018 - Submit on SD/Flash 1 on 2/15/2018
+		This is a multiline comment, used to annotate your HTML code. 
+		Use of NotePad++ to create this page and indent exactly as shown. 
+		In NotePad++ tags are blue, attributes are redm values are purple. 
+		Literal text, which the user sees, is shown in black. 
+		
+-->
+<!-- This is a single line comment -->
+
+<head>
+	<title>WEB 125 Sampler Page</title>
+</head>
+
+<body>
+	<main> <!-- The main tag replaces "container" divs in previous HTML versions -->
+		<header>
+			<h1>Header area, enclosing an h1 heading</h1>
+			<h3>Often an h3 tag would be used for a subheading in this area</h3>
+		</header>
+		<hr> <!-- This is a horizontal rule and is used here to separate sections --> 
+		<section>
+			<article>
+				<h2>First article, often the left column, enclosing an h2 heading</h2>
+				<p>A p element, or paragraph, often follows a heading such as h1, h2, h3, h4 and h6...the six heading sixes from large to small. When you're first scripting a Web page in html, it's often convenient to use "Lorem Ipsum", or greeking, as a text placeholder until you know the real content.</p>
+				<p>This second paragraph within the first article will demonstrate how to "interrupt" a paragraph with a new line using the br tag. It's a often used if you want to contain a long text string, such as <br>HACC, Central Pennsylvania's Community College<br>on one line.</p>
+			</article>
+			<article>
+					<h2>Second article, often the middle column on a desktop PC layout</h2>
+					<p>In responsive design, this second article is often used as the middle column on a desktop layout; when the screen is narrower, this article will wrap under the first article on a tablet or smartphone layout.</p>
+					<p>All three articles are contained with the first "section"of the page. The <code>section</code> tag is one of the new semantic tags in HTML5; this means they have significance in the logical structure of the page...not just for formatting.</p>
+			</article>
+			<article>
+				<h2>Third article, often the right colun on a desktop PC layout</h2>
+				<p>In responsive design, this third article is often used as the right column on a desktop layout; when the screen is narrower, this article layout will wrap under the first and second articles on a tablet or smartphone layout.</p>
+				<p>Two great places to find greeking are <a href="http://www.blindtextgenerator.com/lorem-ipsum" target="_blank">Text Generator</a> and <a href="https://baconipsum.com/" target="_blank">Bacon Ipsum -A Meatier Lorem Ipsum Generator</a>. In this paragraph's HTML you can see examples of the <code>href</code> attribute (hypertext reference), and its <code>target</code> attribute to open the linked page in a new browser tab. You also see three pairs of code tag, which is used to display text in the browser's "monospace" typeface which is usually Courier New on a <i>Windows</i> machine.</p>
+			</article>
+		</section>
+		
+		<hr>
+		
+		<h1>Common Page Elements in No Apparent Order</h1>
+		
+		<h1>An H1 Heading</h1>
+		<h2>An H2 Heading</h2>
+		<h3>An H3 Heading</h3>
+		<h4>An H4 Heading</h4>
+		<h5>An H5 Heading</h5>
+		<h6>An H6 Heading</h6>
+		
+		
+		<h2>An Unordered List</h2>
+		
+		<ul>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+			<li>List Item 5</li>
+		</ul>
+		
+		<h2>An Ordered List</h2>
+		
+		<ol>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+			<li>List Item 5</li>
+		</ol>
+		
+		<h2>A Nested Ordered List - Outline</h2>
+		
+		<ol type="I">
+			<li>Major Topic 1</li>
+				<ol type="A">
+					<li>Sub Topic 1</li>
+						<ol type="1">
+							<li>Minor Topic 1</li>
+							<li>Minor Topic 2</li>
+							<li>Minor Topic 3</li>
+						</ol>
+					<li>Sub Topic 2</li>
+					<li>Sub Topic 3</li>
+				</ol>
+			<li>Major Topic 2</li>
+			<li>Major Topic 3</li>
+		</ol>
+
+		<h2>Internal LInks - Within the Web Site</h2>
+<!-- Note that until we add other content to the site, these links will display a "page not found" message -->
+
+		<p>This is a<a href="../index.htm"> link to index.htm</a>, known as the Home Page and illustrates how to go UP on level from the pages folder to the "root" livel (top) of the Web Site.</p>
+		
+		<p>This is a <a href="form.htm"> link to form.htm</a> and illustrates how to link to page within the same folder.</p>
+		
+		<p>This is a link demonstrating how ot <a href="pages/form.htm">get to the form page</a> from the root level of the  site...an example of going DOWN one level withi the site.</p>
+		
+		<p>This shows how to link an image on this page. In this link, you go UP one level from the pages folder, then DOWN one level into the images folder. There is not yet an images folder or a graphic of a dog, so you won't YET see an image.<img src="../images/doggie.gif"></p>
+		
+		<h2>Quotations</h2>
+		
+		<p>The <code>q</code> tag is often used for short quatations <b>within</b> a paragraph, such as <q>It is what it is</q>. You'll note that it automatically suplies the quatation marks </p>
+		
+		<p>Use the <code>blockquote</code> tag to create indented and specially formatted longer quotations, much like your History or English professors would tell you to do in term papers. Here is a quotation by Dr. Martin Luther King, from BrainyQuote. You'll note how it's indented from both sides.</p>
+		
+		<blockquote> cite="https://www.brainyquote.com/quotes/authors/m/martin_luther_king_jr.html">
+			I resufe to accept the view that mankind is so tragically bound to the starless midnight of racism and war that the bright daybreak of peace and unconditional love will have the final word. Trea more at: <a href="https://www.brainyquote.com/quotes/authors/m/martin_luther_king_jr.html"> BrainyQuotes</a>
+		</blockquote>
+	
+		<h2>Abbreviations</h2>
+		
+		<p>The college at which I am learning the amazing art of Web page design is know as <abbr tittle="Harrisburg Area Community College">HACC</abbr> &mdash; Central Pennsylvania's Community College. I must remember to tell all my friends about the distinguished college and its incredibly handsome professors.</p>
+		<p>You will note that when you pass your pointer over the abbreviation, a tool tip appears with the expanded version.</p>
+		
+		<h2>A Tabel</h2>
+		
+		<table>
+			<tr>
+				<th>Column Heading 1</th>
+				<th>Column Heading 2</th>
+				<th>Column Heading 3</th>
+			</tr>
+			<tr>
+				<td>Row 1 Cell 1</td>
+				<td>Row 1 Cell 2</td>
+				<td>Row 1 Cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 2 Cell 1</td>
+				<td>Row 2 Cell 2</td>
+				<td>Row 2 Cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 3 Cell 1</td>
+				<td>Row 3 Cell 2</td>
+				<td>Row 3 Cell 3</td>
+			</tr>
+		</table>
+		
+		<h2>A Simple Form</h2>
+		
+		<form>
+			Given Name:<br>
+			<input type="text" name="givenName"></br>
+			Middle Name:<br>
+			<input type="text" name="middleName"></br>
+			Family Name:<br>
+			<input type="text" name="familyName"></br>
+			Gender:<br>
+			<input type="radio" name="gender" value="F">Female</br>
+			<input type="radio" name="gender" value="M">male</br>
+			Favorite Color(s):<br>
+			<input type="checkbox" name="colors" value="R">Red</br>
+			<input type="checkbox" name="colors" value="G">Green</br>
+			<input type="checkbox" name="colors" value="B">Blue</br>
+			Coments:<br>
+			<textarea name="comments" rows="10" cols="30">
+				Tell us about your political views
+			</textarea><br>
+			<input type="reset">
+			<input type="submit" value="Submit">
+		</form>
+		
+		<hr>
+		
+		<footer>
+			<h3>This is the Footer Section</h3>
+			<p>Copyright &#169; 2018 by Rupendra Subedi. &#149; All Rights Reserved.</p>
+		</footer>
+	</main>
+</body>
+
+</html>
