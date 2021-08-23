@@ -13,7 +13,7 @@
 -->
 
 <head>
-	<title>The Corner Store - Jwelery</title>
+	<title>theCornerStore - Jwelery</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -29,7 +29,7 @@
 	<!-- Bootstrap v3.3.7 Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
-	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="stylesheet" href="../css/styles.css">
 	
 </head>
 
@@ -37,8 +37,8 @@
 	<div class="container-fluid"> <!-- Corresponds to <main> tag in HTML5 -->
 	
 		<div class="row"> <!-- row 1, 1x12 cols wide, like header in HTML5 --> 
-			<div class="col-sm-12">
-				<h1>The Corner Store - Jwelery</h1>
+			<div class="col-sm-12 title">
+				<h1>the<span>CornerStore</span> - Jwelery</h1>
 				<p>Expect the unExpected</p>
 			</div>
 		</div> <!-- end row 1 -->
@@ -51,14 +51,31 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="../index.htm" align="left">Corner Store</a>
+					
 				</div> <!-- end navbar-header" -->
 				<div class="collapse navbar-collapse" id="navigation">
 					<ul class="nav navbar-nav">
-						<!--<li class="active"><a href="#">Home</a></li>-->
-						<li><a href="table.htm">Products</a></li>
-						<li class="active"><a href="#">Our Services</a></li>
-						<li><a href="form.htm">About Us</a></li>
+						<li><a href="../index.htm">Home</a></li>
+						<li class="dropdown">
+							<a href="pages/money.htm" class="dropdown-toggle" data-toggle="dropdown">Products
+							<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="ulist.htm">Groceries</a></li>
+								<li><a href="olist.htm">Meat</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="pages/money.htm" class="dropdown-toggle" data-toggle="dropdown">Our Services
+							<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="clothing.htm">Traditional Clothing</a></li>
+								<li><a href="jwelery.htm">Traditional Jewellery</a></li>
+								<li><a href="https://www.westernunion.com/us/en/home-new.html" target="_blank">WU Money Transfer</a></li>
+							</ul>
+						</li>
+						<li><a href="form.htm">Contact Us</a></li>
 						<!--<li><a href="#">Page 4</a></li>
 						<li><a href="#">Page 5</a></li>-->
 					</ul>
@@ -66,14 +83,14 @@
 			</div>
 		</nav>
 			
-		<div class="row"> <!-- row 2, 3x4 cols wide, like HMTL5 section -->
+		<div class="row mainContent"> <!-- row 2, 3x4 cols wide, like HMTL5 section -->
 			<div class="col-sm-4"> <!-- left column, like HTML5 article -->
-				<img src="../images/rings.jpg">
+				<img src="../images/ring.png" style="margin-bottom: 20%;">
 				<p>Beauty that is skin deep is always subjected to praise. A glance at the past reveals that it was the Jewellery that had been radiating this inner beauty by adorning the neck, forehead, ears, hands, waists and feet of both the genders. It is even today that young to middle aged women are crazy about Jewellery. With skilful people's hand molded precious metals to create magnificent collections of necklaces, earrings, bracelets and even fashion Jewellery, we offer you the best in and out designed garments.</p>
-				<p>When these artistically curved garments find the right place on a woman's naturally curved figure, they get their due respect and the woman glows with a change in her body language. Gone are the days when diamond, valuable stones, gold and platinum were the only metals to get the shape of you. Nowadays, workingwomen are beatifying themselves with imitation jewellery that have the appearance of the original metals. They find themselves trendy, smart and of course secure in these imitation jewelries and we have it all and are always at your service.</p>
+				
 			</div> <!-- end left column -->
 			<div class="col-sm-4"> <!-- middle column, like HTML5 article -->
-				<img src="../images/lady.jpg">
+				<img src="../images/chura.jpg" style="margin-bottom: 20%;">
 				<p>Here are some of the jewellery that we offer to you.</p>
 				<ul type="star">
 					<li>Ring</li>
@@ -87,15 +104,15 @@
 				</ul>
 			</div> <!-- end middle column -->
 			<div class="col-sm-4"> <!-- right column, like HTML5 article -->
-				<img src="../images/jem.jpg">
-				<p>add two paragraphs</p>
+				<img src="../images/bride.gif" style="margin-bottom: 20%;">
+				<p>When these artistically curved garments find the right place on a woman's naturally curved figure, they get their due respect and the woman glows with a change in her body language. Gone are the days when diamond, valuable stones, gold and platinum were the only metals to get the shape of you. Nowadays, workingwomen are beatifying themselves with imitation jewellery that have the appearance of the original metals. They find themselves trendy, smart and of course secure in these imitation jewelries and we have it all and are always at your service.</p>
 			</div> <!-- end right column -->
 		</div> <!-- end row 2 -->
 				
-		<div class="row"> <!-- row 3, 1x12 cols wide, like header in HTML5 --> 
-			<div class="col-sm-12">
+		<div class="row footer"> <!-- row 3, 1x12 cols wide, like header in HTML5 --> 
+			<div class="col-sm-12 ">
 				<hr>
-				<p>Copyright &#169; by The Corner Store. &#149; All Rights Reserved.</p>
+				<h5>Copyright &#169; 2018 by theCornerStore. &#149; All Right Reserved.</h5>
 			</div>
 		</div> <!-- end row 3 -->
 		
