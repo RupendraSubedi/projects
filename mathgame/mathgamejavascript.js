@@ -63,6 +63,7 @@ for(i=1; i<5; i++){
             //increase score by 1
             score++;
             document.getElementById("scorevalue").innerHTML = score;
+            document.getElementById("score").style.color = "rgb(0,204, 102)";
             //hide wrong box and show correct box
             hide("wrong");
             show("correct");
@@ -77,12 +78,26 @@ for(i=1; i<5; i++){
         //wrong answer
             score--; //decrease score by 1
             document.getElementById("scorevalue").innerHTML = score;
+            document.getElementById("score").style.background = "rgb(255, 0, 0)";
             hide("correct");
             show("wrong");
             setTimeout(function(){
                 hide("wrong");   
             }, 1000);
         }
+        if(score == -3){
+            show("gameOver");
+            document.getElementById("gameOver").innerHTML = "<p>Game over!</p><p>Your score is " + score + ".</p>";   
+            hide("timeremaining");
+            hide("correct");
+            hide("wrong");
+            playing = false;
+            document.getElementById("startreset").innerHTML = "Start Game";
+        }
+        else {
+                playing == true
+            }
+        
     }
 }   
 }
