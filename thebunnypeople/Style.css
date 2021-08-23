@@ -1,0 +1,25 @@
+.a{
+    text-align: center;
+}
+.navbar-inner {
+    background:transparent;
+}
+
+
+/* pet gallery page styles */
+#petgallery .card-columns .card-image  img:hover {
+    align-items: center center;
+    transition: 0.1s;
+    transform: scale(1.1);
+}
+
+#galleryModal {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+
+}
+
+/* end page gallery styles */
