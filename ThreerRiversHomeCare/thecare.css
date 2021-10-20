@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header {
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+header img {
+  width: 152px;
+  float: right;
+}
+
+.address {
+  text-align: left;
+}
+
+form .correction {
+  text-align: center;
+  text-decoration: underline;
+  margin: 5%;
+  overflow-y: hidden;
+}
+
+form .misses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 2%;
+  text-align: center;
+}
+
+form .misses label {
+  margin: 2% 3% 2% 0.51%;
+}
+
+form .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+form .days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3% 2%;
+  flex-wrap: wrap;
+}
+
+form .reason {
+  margin: 2%;
+  flex-wrap: wrap;
+}
+
+form h5 {
+  text-align: center;
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 5% 5% 2% 5%;
+}
+
+form .duties {
+  padding: 0%;
+}
+
+form .checklists {
+  display: grid;
+}
+
+form .signature, form .pin {
+  margin: 2%;
+}
+
+form .officeuse {
+  border: 1px solid #000;
+}
+
+form .officeuse h3 {
+  text-align: center;
+  margin: 2%;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+form .officeuse label, form .officeuse input {
+  margin: 2% 0;
+}
+
+form .officeuse textarea {
+  text-align: center;
+  margin: 2%;
+}
+
+form .officeuse .row {
+  margin: 2%;
+}
+
+form button[type="submit"] {
+  background-color: rgba(6, 155, 6, 0.7);
+  padding: 2%;
+  margin: 2%;
+}
+
+form button[type="reset"] {
+  background-color: rgba(255, 0, 0, 0.7);
+  padding: 2%;
+  margin: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+  form .days {
+    display: flex;
+    flex-direction: column;
+  }
+}

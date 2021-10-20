@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Rivers Home Care - EVV Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="thecare.png">
+    <link rel="stylesheet" href="css/thecare.css">
+
+    <script>
+        // $(document).ready(function(){
+        //     // $(alert('PLEASE READ AND FILL ME CAREFULLY.. THANK YOU!'));
+        //     $('hr').hide();
+        //     $('#info').hide();
+        //     $('#days').hide();
+        //     $('#reason').hide();
+        //     $('.duties').hide();
+        //     $('#duties').hide();
+        //     $('.signature').hide();
+        //     $('.pin').hide();
+        //     $('.officeuse').hide();
+        //     $('button').hide();
+
+        //     $(':radio').click(function(){
+        //         $('#info').show();
+        //     })
+        //     $(':text').click(function(){
+        //         $('#days').show();
+        //     })
+        //     $('#days').click(function(){
+        //         $('#reason').show();
+        //     })
+        //     $('#reason').click(function(){
+        //         $('.duties').show();
+        //         $('hr').show();
+        //         $('#duties').show();
+        //     })
+        //     $(':checkbox').click(function(){
+        //         $('.signature').show();
+        //     })
+        //     $('.signature').click(function(){
+        //         $('.pin').show();
+        //     })
+        //     $('.pin').click(function(){
+        //         $('.officeuse').show();
+        //         $('button').show();
+        //     })
+        //     $('[type="reset"]').click(function(){
+        //         $(alert('PLEASE READ AND FILL ME CAREFULLY.. THANK YOU!'));
+        //     $('hr').hide();
+        //     $('#info').hide();
+        //     $('#days').hide();
+        //     $('#reason').hide();
+        //     $('.duties').hide();
+        //     $('#duties').hide();
+        //     $('.signature').hide();
+        //     $('.pin').hide();
+        //     $('.officeuse').hide();
+        //     $('button').hide();
+        //     });
+
+        //     // $('[type="submit"]').click(function(){
+
+        //     // });
+        // });
+    </script>
+    
+    
+
+</head>
+<body>
+    <form id="evvForm" name="evvform" class="container" autocomplete="on" action="thecare.php">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                <p class="address">
+                   <strong>Three Rivers Home Care, LLC </strong><br>
+                    3631 Brownsville Rd <br>
+                    Pittsburgh, PA 15227 <br>
+                    Ph: 412-207-8591 <br>
+                Fx: 412-207-8694
+                </p>
+                </div>
+                <div class="col-sm-6"><img src="thecare.png" alt="thecare" width="45%" class="thecare"></div>
+                
+            </div>
+        </div>
+    </header>
+    
+        <h2 class="correction text-center"> Missed EVV Correction</h2>
+        <div class="misses container" id="misses" >
+            <input type="radio" name="missed" id="missedIn" required>
+            <label for="missedIn">Missed In</label>
+
+            <input type="radio" name="missed" id="missedOut">
+            <label for="missedOut">Missed Out</label>
+
+            <input type="radio" name="missed" id="missedInout">
+            <label for="missedInOut">Missed In and Out</label>
+
+            <input type="radio" name="missed" id="other">
+            <label for="other">Other</label>
+        </div>
+        <div class="info container" id="info">
+            <label for="consumer-name">Consumer Name</label>
+            <input type="text" placeholder="*must match HHA" name="info" required>
+            <label for="employee-name">Employee Name</label>
+            <input type="text" placeholder="*must match HHA" name="info" required>
+        </div>
+        <div class="days container" id="days">
+            <label for="date">Missed Date</label>
+            <input type="date" required name="day">
+            <label for="time">Missed In Time</label>
+            <input type="time" required name="day">
+            <label for="time">Missed Out Time</label>
+            <input type="time" required name="day">
+        </div>
+        <div class="reason container" id="reason" >
+            <label for="reason">Describe the reason in detail.</label>
+            <textarea name="reason" id="reason" cols="60vw" rows="3" required></textarea>
+        </div>
+        <hr>
+        <h5 class="duties container">Duties Performed:</h5>
+        <div class="checklists" id="duties">
+            
+            <input type="checkbox" name="115" required>
+            <label for="115">115 - Meal Preparation</label>
+            <input type="checkbox" name="116">
+            <label for="116">116 - Housework/Chore</label>
+            <input type="checkbox" name="117">
+            <label for="117">117 - Managing Finance</label>
+            <input type="checkbox" name="118">
+            <label for="118">118 - Managing Medications</label>
+            <input type="checkbox" name="119">
+            <label for="119">119 - Shopping</label>
+            <input type="checkbox" name="120">
+            <label for="120">120 - Transportation</label>
+            <input type="checkbox" name="122">
+            <label for="122">122 - Hygiene</label>
+            <input type="checkbox" name="123">
+            <label for="123">123 - Dressing Upper</label>
+            <input type="checkbox" name="124">
+            <label for="124">124 -  Dressing Lower</label>
+            <input type="checkbox" name="125">
+            <label for="125"> Locomotion</label>
+            <input type="checkbox" name="126">
+            <label for="126"> 126 - Transfer</label>
+            <input type="checkbox" name="127">
+            <label for="127">127 - Toilet Use</label>
+            <input type="checkbox" name="128">
+            <label for="128">128 - Bed Mobility</label>
+            <input type="checkbox" name="129">
+            <label for="129">129 - Eating</label>
+            <input type="checkbox" name="134">
+            <label for="134">134 - Bathing</label>
+            <input type="checkbox" name="137">
+            <label for="137">137 - Lotion/Ointment</label>
+            <input type="checkbox" name="138">
+            <label for="138">138 - Laundry</label>
+            <input type="checkbox" name="140">
+            <label for="140">140 - Supervision/Coaching</label>
+            <input type="checkbox" name="141">
+            <label for="141">141 - Incontinence Care</label>
+            <input type="checkbox" name="203">
+            <label for="203">203 - Other</label>
+        </div>
+        <hr>
+        <div class="signature container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="signature">Consumer Signature:</label><br>
+            <input type="text" name="signature" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="signature">Employee Signature:</label><br>
+            <input type="text" name="signature" required>
+                </div>
+            </div>
+        </div>
+        <div class="pin container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="pin">Consumer Pin:</label><br>
+                    <input type="number" placeholder="*must match HHA" name="pin" required><br>
+                    <input type="checkbox" name="aggrement" title="aggreement" required> <i>Consumer, I hearby certify that I received these documented services on the date and time listed above.</i>
+                </div>
+                <div class="col-sm-6">
+                    <label for="pin">Employee Pin:</label><br>
+                    <input type="number" placeholder="*must match HHA" name="pin" required><br>
+                    <input type="checkbox" name="aggrement" title="aggreement" required><i> Employee, I hearby certify that the information presented above is true and correct to the best of my knowledge.</i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="officeuse container" name='officeuse'>
+            <h3>Office Use Only</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="reviewedby">Reviewed By:</label>
+                    <input type="text" name="reviewedby">
+                </div>
+                <div class="col-sm-6">
+                    <label for="revieweddate">Reviewed Date:</label>
+                    <input type="date" name="revieweddate">
+                </div>
+                
+                <label for="notes" style="margin: 3% auto auto 3%;">Notes:</label>
+                <textarea name="note" cols="100%" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="container">
+            <button type="submit" id="submitBtn">Submit</button>
+        <button type="reset">Clear</button>
+        <!-- <button id="pdf">pdf</button> -->
+        </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js" integrity="sha512-V/C9Axb8EEL4ix79ERIJmpRd6Mp1rWVSxa2PIBCdCxqhEsfCBWp/R0xJ4U495czhcuDWrGOFYo8+QI3lJ9DK5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="thecare.js" defer></script>
+
+    
+
+</body>
+</html>
